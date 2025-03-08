@@ -1,109 +1,67 @@
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
 }
 
-/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #0073e6;
+    background: #007bff;
     color: white;
+    padding: 10px;
 }
 
-.logo {
-    font-size: 24px;
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+main {
+    padding: 20px;
 }
 
-nav ul li {
-    margin-left: 20px;
+h1, h2, h3 {
+    color: #333;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background: #005bb5;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 36px;
-}
-
-/* Tools Section */
-.tools {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.tools h2 {
-    font-size: 28px;
-}
-
-.tool-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.tool {
+.converter {
     background: white;
     padding: 20px;
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tool h3 {
-    margin: 0;
-    font-size: 22px;
-}
-
-.tool p {
+input, select, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
     font-size: 16px;
-    color: #555;
 }
 
-.tool a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: #0073e6;
+button {
+    background-color: #007bff;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-/* About & Contact */
-.about, .contact {
-    padding: 40px 20px;
-    text-align: center;
-    background: white;
-    margin-top: 20px;
+button:hover {
+    background-color: #0056b3;
 }
 
 footer {
-    text-align: center;
+    margin-top: 20px;
     padding: 10px;
-    background: #222;
+    background: #007bff;
     color: white;
 }
