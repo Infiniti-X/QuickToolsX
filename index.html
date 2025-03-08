@@ -1,64 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickToolsX - Smart Online Tools</title>
-    <link rel="stylesheet" href="style.css">
+    <title>QuickToolsX - Home</title>
 </head>
 <body>
-
     <header>
-        <div class="logo">QuickToolsX</div>
+        <h1>QuickToolsX</h1>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#">Home</a>
+            <a href="#">Unit Converter</a>
+            <a href="#">More Tools (Coming Soon)</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Welcome to QuickToolsX</h1>
-        <p>Your one-stop destination for powerful online tools.</p>
-    </section>
+    <main>
+        <h2>Welcome to QuickToolsX</h2>
+        <p>Your one-stop destination for powerful online tools!</p>
 
-    <section id="tools" class="tools">
-        <h2>Our Tools</h2>
-        <div class="tool-list">
-            <div class="tool">
-                <h3>Unit Converter</h3>
-                <p>Convert between different units instantly.</p>
-                <a href="#">Try Now</a>
-            </div>
-            <div class="tool">
-                <h3>Percentage Calculator</h3>
-                <p>Quickly calculate percentages with ease.</p>
-                <a href="#">Try Now</a>
-            </div>
-            <div class="tool">
-                <h3>Age Calculator</h3>
-                <p>Find out your exact age in seconds.</p>
-                <a href="#">Try Now</a>
-            </div>
-        </div>
-    </section>
+        <section class="converter">
+            <h3>Unit Converter</h3>
+            <label for="category">Choose a category:</label>
+            <select id="category" onchange="loadUnits()">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+            </select>
 
-    <section id="about" class="about">
-        <h2>About QuickToolsX</h2>
-        <p>QuickToolsX provides simple yet powerful online tools to help you with daily calculations, conversions, and more.</p>
-    </section>
+            <div class="input-section">
+                <input type="number" id="inputValue" placeholder="Enter value">
+                <select id="fromUnit"></select>
+            </div>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>For any queries, reach out to us at <strong>support@quicktoolsx.com</strong></p>
-    </section>
+            <div class="output-section">
+                <span>=</span>
+                <span id="outputValue">0</span>
+                <select id="toUnit"></select>
+            </div>
+
+            <button onclick="convert()">Convert</button>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2025 QuickToolsX | All Rights Reserved</p>
+        <p>&copy; 2025 QuickToolsX. All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
