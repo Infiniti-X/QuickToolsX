@@ -1,11 +1,9 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background: #f4f4f4;
     color: #333;
-    text-align: center;
 }
 
 /* Header */
@@ -14,74 +12,98 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #ffffff;
-    border-bottom: 2px solid #ddd;
+    background: #0073e6;
+    color: white;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #007BFF;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #007BFF;
 }
 
 /* Hero Section */
 .hero {
-    padding: 60px 20px;
-    background-color: #e3f2fd;
-    border-radius: 10px;
-    margin: 20px;
+    text-align: center;
+    padding: 50px 20px;
+    background: #005bb5;
+    color: white;
 }
 
 .hero h1 {
+    font-size: 36px;
+}
+
+/* Tools Section */
+.tools {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.tools h2 {
     font-size: 28px;
-    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.tool-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.cta-button {
+.tool {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tool h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.tool p {
+    font-size: 16px;
+    color: #555;
+}
+
+.tool a {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007BFF;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0073e6;
     color: white;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
 }
 
-.cta-button:hover {
-    background-color: #0056b3;
+/* About & Contact */
+.about, .contact {
+    padding: 40px 20px;
+    text-align: center;
+    background: white;
+    margin-top: 20px;
 }
 
-/* Footer */
 footer {
-    margin-top: 30px;
-    padding: 15px;
-    background-color: #ffffff;
-    border-top: 2px solid #ddd;
-    color: #555;
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    color: white;
 }
