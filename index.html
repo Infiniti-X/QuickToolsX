@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickToolsX</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="QuickToolsX - A collection of free online tools for everyday tasks. Convert units, generate QR codes, change text cases, and more!">
+  <meta name="keywords" content="online tools, unit converter, QR code generator, text case converter, password generator">
+  <meta name="author" content="Infiniti-X">
+  <title>QuickToolsX - Free Online Tools</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>QuickToolsX</h1>
-        <p>Your one-stop destination for powerful online tools!</p>
-    </header>
+  <header>
+    <div class="container">
+      <h1>QuickToolsX</h1>
+      <p>Your go-to platform for free online tools</p>
+    </div>
+  </header>
 
-    <main>
-        <div class="tool">
-            <h2>Tool 1</h2>
-            <p>Description of Tool 1</p>
-            <button>Use Tool</button>
-        </div>
+  <main class="container">
+    <section class="tools-grid">
+      <a href="tools/unit-converter.html" class="tool-card">
+        <img src="assets/icons/unit-converter.png" alt="Unit Converter">
+        <h3>Unit Converter</h3>
+        <p>Convert between different units easily.</p>
+      </a>
+      <a href="tools/qr-code-generator.html" class="tool-card">
+        <img src="assets/icons/qr-code.png" alt="QR Code Generator">
+        <h3>QR Code Generator</h3>
+        <p>Generate QR codes for URLs, text, and more.</p>
+      </a>
+      <a href="tools/text-case-converter.html" class="tool-card">
+        <img src="assets/icons/text-case.png" alt="Text Case Converter">
+        <h3>Text Case Converter</h3>
+        <p>Change text case to uppercase, lowercase, etc.</p>
+      </a>
+      <a href="tools/random-password-generator.html" class="tool-card">
+        <img src="assets/icons/password-generator.png" alt="Random Password Generator">
+        <h3>Random Password Generator</h3>
+        <p>Create strong and secure passwords.</p>
+      </a>
+    </section>
+  </main>
 
-        <div class="tool">
-            <h2>Tool 2</h2>
-            <p>Description of Tool 2</p>
-            <button>Use Tool</button>
-        </div>
-        
-        <div class="tool">
-            <h2>Tool 3</h2>
-            <p>Description of Tool 3</p>
-            <button>Use Tool</button>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 QuickToolsX. All rights reserved.</p>
-    </footer>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 QuickToolsX. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
