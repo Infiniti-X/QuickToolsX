@@ -1,44 +1,28 @@
-// Text Case Converter
-function convertText(type) {
-    let text = document.getElementById("text-input").value;
-    if (type === "upper") {
-        document.getElementById("text-output").innerText = text.toUpperCase();
-    } else if (type === "lower") {
-        document.getElementById("text-output").innerText = text.toLowerCase();
-    } else if (type === "capitalize") {
-        document.getElementById("text-output").innerText = text.replace(/\b\w/g, char => char.toUpperCase());
-    }
+function showTool(toolId) {
+    document.querySelectorAll('.tool-container').forEach(tool => {
+        tool.style.display = 'none';
+    });
+    document.getElementById(toolId).style.display = 'block';
 }
 
-// Word & Character Counter
-document.getElementById("word-counter-input").addEventListener("input", function() {
-    let text = this.value.trim();
-    document.getElementById("word-count").innerText = text === "" ? 0 : text.split(/\s+/).length;
-    document.getElementById("char-count").innerText = text.length;
-});
-
-// Basic Calculator
-let calcInput = document.getElementById("calc-input");
-function calculate(value) {
-    if (value === "=") {
-        calcInput.value = eval(calcInput.value);
-    } else if (value === "C") {
-        calcInput.value = "";
-    } else {
-        calcInput.value += value;
+// Calculator Functions
+function calcInput(value) {
+    document.getElementById('calc-display').value += value;
+}
+function calculateResult() {
+    try {
+        document.getElementById('calc-display').value = eval(document.getElementById('calc-display').value);
+    } catch {
+        document.getElementById('calc-display').value = 'Error';
     }
 }
 function clearCalc() {
-    calcInput.value = "";
+    document.getElementById('calc-display').value = '';
 }
 
-// QR Code Generator
-function generateQR() {
-    let qrText = document.getElementById("qr-text").value;
-    let qrOutput = document.getElementById("qr-output");
-    if (qrText === "") {
-        qrOutput.innerHTML = "<p style='color: red;'>Please enter text!</p>";
-    } else {
-        qrOutput.innerHTML = `<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrText}" alt="QR Code">`;
-    }
+// Word Counter
+function countWords() {
+    let text = document.getElementById('text-input').value.trim();
+    let words = text ? text.split(/\s+/).length : 0;
+    document.getElementById('word-count').innerText = words;
 }
