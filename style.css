@@ -1,50 +1,50 @@
 body {
     font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background: #f4f4f4;
+    background-color: #f4f4f4;
 }
+
 header {
-    background: #333;
+    background-color: #007bff;
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
-.tools {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+
 .tool {
-    background: #555;
-    color: white;
-    padding: 15px 30px;
-    margin: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.tool-container {
-    display: none;
+    background: white;
     margin: 20px;
     padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.calc-buttons button {
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    margin: 5px;
-    cursor: pointer;
-}
-textarea {
+
+input, textarea {
     width: 80%;
-    height: 100px;
     padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
 }
-footer {
-    margin-top: 30px;
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 250px;
+    margin: auto;
+}
+
+button {
     padding: 10px;
-    background: #333;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background: #007bff;
     color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
 }
