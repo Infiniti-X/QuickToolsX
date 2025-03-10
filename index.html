@@ -3,69 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickToolsX</title>
+    <title>QuickToolsX - Home</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>QuickToolsX</h1>
-        <p>Your one-stop destination for powerful online tools!</p>
+        <p>Your one-stop destination for online tools</p>
     </header>
 
-    <main>
-        <!-- Text Case Converter -->
-        <div class="tool">
-            <h2>Text Case Converter</h2>
-            <textarea id="text-input" placeholder="Enter text here..."></textarea>
-            <button onclick="convertText('upper')">UPPERCASE</button>
-            <button onclick="convertText('lower')">lowercase</button>
-            <button onclick="convertText('capitalize')">Capitalize</button>
-            <p id="text-output"></p>
-        </div>
+    <section class="tools">
+        <div class="tool" onclick="showTool('calculator')">Calculator</div>
+        <div class="tool" onclick="showTool('wordCounter')">Word Counter</div>
+    </section>
 
-        <!-- Word & Character Counter -->
-        <div class="tool">
-            <h2>Word & Character Counter</h2>
-            <textarea id="word-counter-input" placeholder="Type here..."></textarea>
-            <p>Words: <span id="word-count">0</span> | Characters: <span id="char-count">0</span></p>
+    <section id="calculator" class="tool-container">
+        <h2>Calculator</h2>
+        <input type="text" id="calc-display" disabled>
+        <div class="calc-buttons">
+            <button onclick="calcInput('7')">7</button>
+            <button onclick="calcInput('8')">8</button>
+            <button onclick="calcInput('9')">9</button>
+            <button onclick="calcInput('+')">+</button>
+            <button onclick="calcInput('4')">4</button>
+            <button onclick="calcInput('5')">5</button>
+            <button onclick="calcInput('6')">6</button>
+            <button onclick="calcInput('-')">-</button>
+            <button onclick="calcInput('1')">1</button>
+            <button onclick="calcInput('2')">2</button>
+            <button onclick="calcInput('3')">3</button>
+            <button onclick="calcInput('*')">*</button>
+            <button onclick="calcInput('0')">0</button>
+            <button onclick="clearCalc()">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="calcInput('/')">/</button>
         </div>
+    </section>
 
-        <!-- Basic Calculator -->
-        <div class="tool">
-            <h2>Basic Calculator</h2>
-            <input type="text" id="calc-input" placeholder="0" readonly>
-            <div class="calc-buttons">
-                <button onclick="calculate('7')">7</button>
-                <button onclick="calculate('8')">8</button>
-                <button onclick="calculate('9')">9</button>
-                <button onclick="calculate('/')">/</button>
-                <button onclick="calculate('4')">4</button>
-                <button onclick="calculate('5')">5</button>
-                <button onclick="calculate('6')">6</button>
-                <button onclick="calculate('*')">*</button>
-                <button onclick="calculate('1')">1</button>
-                <button onclick="calculate('2')">2</button>
-                <button onclick="calculate('3')">3</button>
-                <button onclick="calculate('-')">-</button>
-                <button onclick="calculate('0')">0</button>
-                <button onclick="clearCalc()">C</button>
-                <button onclick="calculate('=')">=</button>
-                <button onclick="calculate('+')">+</button>
-            </div>
-        </div>
-
-        <!-- QR Code Generator -->
-        <div class="tool">
-            <h2>QR Code Generator</h2>
-            <input type="text" id="qr-text" placeholder="Enter text or URL">
-            <button onclick="generateQR()">Generate QR Code</button>
-            <div id="qr-output"></div>
-        </div>
-    </main>
+    <section id="wordCounter" class="tool-container">
+        <h2>Word Counter</h2>
+        <textarea id="text-input" placeholder="Type or paste text here..." oninput="countWords()"></textarea>
+        <p>Word Count: <span id="word-count">0</span></p>
+    </section>
 
     <footer>
-        <p>&copy; 2025 QuickToolsX. All rights reserved.</p>
+        <p>&copy; 2025 QuickToolsX</p>
     </footer>
 </body>
 </html>
