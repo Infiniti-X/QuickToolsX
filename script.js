@@ -1,2 +1,3 @@
-// Placeholder for future dynamic functionality
-console.log("QuickToolsX is running!");
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("QuickToolsX Loaded!");
+});
