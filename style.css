@@ -1,161 +1,37 @@
-/* General Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: #fff;
-  overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Glassmorphism Effect */
-.glassmorphism {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-/* Header */
 header {
-  text-align: center;
-  padding: 60px 0;
+    background: #007BFF;
+    color: white;
+    padding: 15px;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 3rem;
-  font-weight: 700;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-header p {
-  margin: 10px 0 0;
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.8);
+nav ul li {
+    display: inline;
+    margin: 10px;
 }
 
-/* Tools Grid */
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px 0;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.tool-card {
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.tool-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.tool-card .icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-.tool-card h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.tool-card p {
-  margin: 10px 0 0;
-  font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 60px;
-}
-
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-/* Background Animation */
-.background-animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.background-animation .circle {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  animation: float 10s infinite ease-in-out;
-}
-
-.background-animation .circle:nth-child(1) {
-  width: 200px;
-  height: 200px;
-  top: 10%;
-  left: 5%;
-  animation-duration: 12s;
-}
-
-.background-animation .circle:nth-child(2) {
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  left: 20%;
-  animation-duration: 8s;
-}
-
-.background-animation .circle:nth-child(3) {
-  width: 100px;
-  height: 100px;
-  top: 20%;
-  left: 70%;
-  animation-duration: 10s;
-}
-
-.background-animation .circle:nth-child(4) {
-  width: 250px;
-  height: 250px;
-  top: 70%;
-  left: 60%;
-  animation-duration: 15s;
-}
-
-.background-animation .circle:nth-child(5) {
-  width: 120px;
-  height: 120px;
-  top: 80%;
-  left: 10%;
-  animation-duration: 9s;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+section {
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
 }
