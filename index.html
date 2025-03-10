@@ -1,178 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="QuickToolsX - A collection of free online tools for everyday tasks. Convert units, generate QR codes, change text cases, and more!">
-  <meta name="keywords" content="online tools, unit converter, QR code generator, text case converter, password generator">
-  <meta name="author" content="Infiniti-X">
-  <title>QuickToolsX - Free Online Tools</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickToolsX - Your Ultimate Tool Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Header -->
-  <header class="glassmorphism">
-    <div class="container">
-      <h1>QuickToolsX</h1>
-      <p>Your go-to platform for free online tools</p>
-    </div>
-  </header>
 
-  <!-- Main Content -->
-  <main class="container">
-    <section class="tools-grid">
-      <!-- Unit Converter -->
-      <a href="tools/unit-converter.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-balance-scale"></i>
-        </div>
-        <h3>Unit Converter</h3>
-        <p>Convert between different units easily.</p>
-      </a>
+    <header>
+        <h1>QuickToolsX</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tools/currency-converter.html">Currency Converter</a></li>
+                <li><a href="tools/lucky-number.html">Lucky Number</a></li>
+                <li><a href="tools/random-number.html">Random Number</a></li>
+                <li><a href="tools/taste-identifier.html">Taste Identifier</a></li>
+            </ul>
+        </nav>
+    </header>
 
-      <!-- QR Code Generator -->
-      <a href="tools/qr-code-generator.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-qrcode"></i>
-        </div>
-        <h3>QR Code Generator</h3>
-        <p>Generate QR codes for URLs, text, and more.</p>
-      </a>
-
-      <!-- Text Case Converter -->
-      <a href="tools/text-case-converter.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-text-height"></i>
-        </div>
-        <h3>Text Case Converter</h3>
-        <p>Change text case to uppercase, lowercase, etc.</p>
-      </a>
-
-      <!-- Random Password Generator -->
-      <a href="tools/random-password-generator.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-lock"></i>
-        </div>
-        <h3>Random Password Generator</h3>
-        <p>Create strong and secure passwords.</p>
-      </a>
-
-      <!-- Color Picker -->
-      <a href="tools/color-picker.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-palette"></i>
-        </div>
-        <h3>Color Picker</h3>
-        <p>Pick and copy colors in HEX, RGB, and HSL.</p>
-      </a>
-
-      <!-- Image Resizer -->
-      <a href="tools/image-resizer.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-image"></i>
-        </div>
-        <h3>Image Resizer</h3>
-        <p>Resize images to your desired dimensions.</p>
-      </a>
-
-      <!-- Base64 Encoder -->
-      <a href="tools/base64-encoder.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-code"></i>
-        </div>
-        <h3>Base64 Encoder</h3>
-        <p>Encode text or files to Base64 format.</p>
-      </a>
-
-      <!-- URL Encoder -->
-      <a href="tools/url-encoder.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-link"></i>
-        </div>
-        <h3>URL Encoder</h3>
-        <p>Encode or decode URLs easily.</p>
-      </a>
-
-      <!-- Lorem Ipsum Generator -->
-      <a href="tools/lorem-ipsum-generator.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-paragraph"></i>
-        </div>
-        <h3>Lorem Ipsum Generator</h3>
-        <p>Generate placeholder text for your projects.</p>
-      </a>
-
-      <!-- Age Calculator -->
-      <a href="tools/age-calculator.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-birthday-cake"></i>
-        </div>
-        <h3>Age Calculator</h3>
-        <p>Calculate your age in years, months, and days.</p>
-      </a>
-
-      <!-- BMI Calculator -->
-      <a href="tools/bmi-calculator.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-weight"></i>
-        </div>
-        <h3>BMI Calculator</h3>
-        <p>Calculate your Body Mass Index (BMI).</p>
-      </a>
-
-      <!-- Currency Converter -->
-      <a href="tools/currency-converter.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-money-bill-wave"></i>
-        </div>
-        <h3>Currency Converter</h3>
-        <p>Convert between different currencies.</p>
-      </a>
-
-      <!-- Time Zone Converter -->
-      <a href="tools/time-zone-converter.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-globe"></i>
-        </div>
-        <h3>Time Zone Converter</h3>
-        <p>Convert time between different time zones.</p>
-      </a>
-
-      <!-- Stopwatch -->
-      <a href="tools/stopwatch.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-stopwatch"></i>
-        </div>
-        <h3>Stopwatch</h3>
-        <p>Track time with a simple stopwatch.</p>
-      </a>
-
-      <!-- Countdown Timer -->
-      <a href="tools/countdown-timer.html" class="tool-card glassmorphism">
-        <div class="icon">
-          <i class="fas fa-hourglass-start"></i>
-        </div>
-        <h3>Countdown Timer</h3>
-        <p>Set a countdown timer for events.</p>
-      </a>
+    <section id="main">
+        <h2>Welcome to QuickToolsX</h2>
+        <p>Discover simple yet powerful tools for daily use.</p>
     </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="glassmorphism">
-    <div class="container">
-      <p>&copy; 2025 QuickToolsX. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Background Animation -->
-  <div class="background-animation">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-  </div>
 </body>
 </html>
